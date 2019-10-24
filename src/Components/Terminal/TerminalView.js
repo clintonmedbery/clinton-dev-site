@@ -3,7 +3,8 @@ import Draggable from 'react-draggable';
 import styles from './Terminal.module.css';
 import { TitleBar, Window } from "react-desktop";
 
-export const TerminalView = ({}) => {
+export const TerminalView = () => {
+
 
     const closeTerminal = () => {
 
