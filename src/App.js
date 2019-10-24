@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Terminal} from "./Components/Terminal/Terminal";
-import {IconWithLabel} from "./Components/IconWithLabel/IconWithLabel";
-import {iconTypes} from "./Components/IconWithLabel/IconWithLabelConstants";
+import { Terminal } from "./Components/Terminal/Terminal";
+import { IconWithLabel } from "./Components/IconWithLabel/IconWithLabel";
+import { iconTypes } from "./Components/IconWithLabel/IconWithLabelConstants";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           labelTitle={"Terminal"}
           doubleClickHandler={() => {}}
           positionX={window.innerWidth - 100}
-          positionY={-(window.innerWidth / 2) + 50}
+          positionY={50}
       />
     </div>
   );
