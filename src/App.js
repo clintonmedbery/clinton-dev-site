@@ -13,7 +13,7 @@ function App() {
           labelTitle={"Terminal"}
           doubleClickHandler={() => {}}
           positionX={window.innerWidth - 100}
-          positionY={-(window.innerWidth / 2) + 100}
+          positionY={-(window.innerWidth / 2) + 50}
       />
     </div>
   );
