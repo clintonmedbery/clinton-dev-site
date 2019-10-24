@@ -1,3 +1,7 @@
+.wrapper {
+    width: 500px;
+}
+
 .terminalTextField {
     position: absolute;
     background-color: black;
@@ -5,4 +9,3 @@
     font-family: "Courier New", Courier, monospace;
     text-align: left;
 }
-

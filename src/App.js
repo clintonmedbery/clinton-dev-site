@@ -1,20 +1,11 @@
 import React from 'react';
 import './App.css';
-import { Terminal } from "./Components/Terminal/Terminal";
-import { IconWithLabel } from "./Components/IconWithLabel/IconWithLabel";
-import { iconTypes } from "./Components/IconWithLabel/IconWithLabelConstants";
+import { Desktop } from "./Components/Desktop/Desktop";
 
 function App() {
   return (
     <div className="App">
-      <Terminal/>
-      <IconWithLabel
-          type={iconTypes.terminal}
-          labelTitle={"Terminal"}
-          doubleClickHandler={() => {}}
-          positionX={window.innerWidth - 100}
-          positionY={50}
-      />
+      <Desktop/>
     </div>
   );
 }

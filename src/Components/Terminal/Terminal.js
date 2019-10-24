@@ -1,9 +1,9 @@
 import React from "react";
 import { TerminalView } from "./TerminalView";
 
-export const Terminal = () => {
+export const Terminal = ({isHidden, closeHandler}) => {
 
     return (
-        <TerminalView/>
+        <TerminalView isHidden={isHidden} closeHandler={closeHandler}/>
     );
 };
