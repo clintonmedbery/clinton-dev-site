@@ -7,7 +7,7 @@ import {Resume} from "../Resume/Resume";
 
 export const DesktopView = () => {
     const [isTerminalHidden, setTerminalHidden] = useState(false);
-    const [isResumeHidden, setResumeHidden] = useState(false);
+    const [isResumeHidden, setResumeHidden] = useState(true);
 
     const showTerminal = () => {
         setTerminalHidden(false);
