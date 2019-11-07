@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import {Terminal} from "../Terminal/Terminal";
 import {IconWithLabel} from "../IconWithLabel/IconWithLabel";
 import {iconTypes} from "../IconWithLabel/IconWithLabelConstants";
+import {Resume} from "../Resume/Resume";
 
 export const DesktopView = () => {
     const [isTerminalHidden, setTerminalHidden] = useState(false);
+    const [isResumeHidden, setResumeHidden] = useState(false);
 
     const showTerminal = () => {
         setTerminalHidden(false);
@@ -13,6 +15,14 @@ export const DesktopView = () => {
 
     const closeTerminal = () => {
         setTerminalHidden(true);
+    };
+
+    const showResume = () => {
+        setResumeHidden(false)
+    };
+
+    const closeResume = () => {
+        setResumeHidden(true)
     };
 
     return (
@@ -24,7 +34,12 @@ export const DesktopView = () => {
                 positionX={window.innerWidth - 100}
                 positionY={50}
             />
-            <Terminal isHidden={isTerminalHidden} closeHandler={closeTerminal}/>
+            <Terminal
+                isHidden={isTerminalHidden}
+                closeHandler={closeTerminal}
+                showResume={showResume}
+            />
+            <Resume isHidden={isResumeHidden} closeHandler={closeResume}/>
         </>
 
     );

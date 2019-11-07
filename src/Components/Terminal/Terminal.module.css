@@ -2,10 +2,29 @@
     width: 500px;
 }
 
+.terminalText {
+    position: absolute;
+    background-color: black;
+    color: rgb(0,255,0);
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    top: 3px;
+}
+
 .terminalTextField {
     position: absolute;
     background-color: black;
     color: rgb(0,255,0);
     font-family: "Courier New", Courier, monospace;
     text-align: left;
+    bottom: 3px;
+}
+
+.terminalInput {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 7px;
+    font-family: "Courier New", Courier, monospace;
+    width: 440px;
 }
