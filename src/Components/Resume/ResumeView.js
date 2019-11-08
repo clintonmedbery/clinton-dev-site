@@ -27,7 +27,7 @@ export const ResumeView = ({isHidden, closeHandler}) => {
                 <Window hidden={isHidden} padding={'10px'} chrome height={'600px'} width={'500px'} horizontalAlignment={'center'} background={'white'}>
                     <TitleBar className={'can-drag'} title={'ClintonMedberyResume.pdf'} controls onCloseClick={closeHandler}/>
                     <div className={styles.wrapper}>
-                        <Document file="./ClintonMedberyResume.pdf" onLoadError={console.error}>
+                        <Document file="./ClintonMedberyResume.pdf" onLoadError={console.error} renderMode="svg">
                             <Page pageNumber={page} width={450} />
                         </Document>
                         <Button color="blue" margin=".6em" onClick={previousPage} disabled={page === 1}>Prev</Button>
