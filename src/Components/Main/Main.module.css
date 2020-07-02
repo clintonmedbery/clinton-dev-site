@@ -8,3 +8,8 @@
     font-size: 1.3em;
     color: #fff;
 }
+
+.mainContainer {
+    min-height: 70em;
+    margin: 3em;
+}

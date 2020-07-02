@@ -8,9 +8,9 @@ import {Link} from "react-router-dom";
 import MeLogo from '../../Images/Avatar.jpeg'
 import styles from './Main.module.css'
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Sider } = Layout;
 
-const Main = () => {
+const Main = (props) => {
   let [sideCollapsed, setSideCollapsed] = useState(false)
   return (
     <Layout>
@@ -25,8 +25,8 @@ const Main = () => {
       <Layout>
         <Sider trigger={null} collapsible collapsed={sideCollapsed}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1">
+          <Menu theme="dark" mode="inline">
+            <Menu.Item key="1" style={{marginTop: '-.2em'}}>
               <Link to="/">
                 <Icon>
                   <FontAwesomeIcon icon={faHome} fixedWidth />
@@ -53,7 +53,9 @@ const Main = () => {
           </Menu>
         </Sider>
         <Content>
-          <HomePage/>
+          <div className={styles.mainContainer}>
+            {props.children}
+          </div>
         </Content>
       </Layout>
     </Layout>
