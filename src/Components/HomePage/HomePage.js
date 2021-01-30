@@ -7,7 +7,7 @@ const HomePage = () => {
     <Main>
       <div>
         <div style={{ marginBottom: "1em" }}>
-          Hello my name is Clint and this is my web page. I work at
+          Hello my name is Clint and this is my web page.
         </div>
         <h3>A few projects of mine...</h3>
         <Card title={"yabalog"} style={{ marginBottom: "1em" }}>
