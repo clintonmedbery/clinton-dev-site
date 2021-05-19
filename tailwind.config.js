@@ -22,6 +22,9 @@ module.exports = {
         },
         steelTeal: {
           DEFAULT: '#589193'
+        },
+        florBlue: {
+          DEFAULT: '#81F0E5'
         }
       }
     }

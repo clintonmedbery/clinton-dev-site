@@ -37,7 +37,12 @@ const HomePage = () => {
                 Interactive VR application written in react-xr and
                 react-three-fiber.
               </div>
-              <a href="https://gigabodes.com" target="_blank" rel="noreferrer">
+              <a
+                className="underline text-blue-600"
+                href="https://gigabodes.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Gigabodes
               </a>
             </NewCard>
@@ -55,6 +60,7 @@ const HomePage = () => {
                 cloud.
               </div>
               <a
+                className="underline text-blue-600"
                 href="https://github.com/clintonmedbery/yabalog"
                 target="_blank"
                 rel="noreferrer"
@@ -75,6 +81,7 @@ const HomePage = () => {
                 and similar other weather apps.
               </div>
               <a
+                className="underline text-blue-600"
                 href="https://www.oldschoolweather.com/"
                 target="_blank"
                 rel="noreferrer"
@@ -83,6 +90,7 @@ const HomePage = () => {
               </a>
               <br />
               <a
+                className="underline text-blue-600"
                 href="https://github.com/clintonmedbery/weather-client"
                 target="_blank"
                 rel="noreferrer"
@@ -103,6 +111,7 @@ const HomePage = () => {
                 people who have trouble speaking communicate.
               </div>
               <a
+                className="underline text-blue-600"
                 href="https://www.assistiveware.com/learn-aac/what-is-aac"
                 target="_blank"
                 rel="noreferrer"
@@ -111,6 +120,7 @@ const HomePage = () => {
               </a>
               <br />
               <a
+                className="underline text-blue-600"
                 href="https://github.com/clintonmedbery/FreeAAC"
                 target="_blank"
                 rel="noreferrer"
@@ -131,6 +141,7 @@ const HomePage = () => {
                 Ant Design.
               </div>
               <a
+                className="underline text-blue-600"
                 href="https://github.com/clintonmedbery/clinton-dev-site"
                 target="_blank"
                 rel="noreferrer"
@@ -150,7 +161,7 @@ export default HomePage;
 const NewCard = ({ title, style, ...props }) => {
   return (
     <div
-      className="px-3 py-2 bg-gray-300 rounded-md border-blueGreen border-2 divide-y-2 divide-blueGreen"
+      className="px-3 py-2 bg-florBlue rounded-md border-blueGreen border-2 divide-y-2 divide-blueGreen"
       style={style}
     >
       <div className="text-purplegray text-xl">{title}</div>
