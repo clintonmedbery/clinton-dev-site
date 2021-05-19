@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Main from "../Main/Main";
 
 const HeadsDown = () => {
@@ -11,7 +11,7 @@ const HeadsDown = () => {
         </div>
       </div>
     </Main>
-  )
+  );
 };
 
-export default HeadsDown
+export default HeadsDown;

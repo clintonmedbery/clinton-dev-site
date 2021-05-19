@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-import { Avatar, Layout, Menu, Row } from "antd";
+import React from "react";
+import { Avatar, Layout, Menu } from "antd";
 import Icon from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faDesktop, faHdd } from "@fortawesome/free-solid-svg-icons";
-import HomePage from "../HomePage/HomePage";
+import { faDesktop, faHdd } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import MeLogo from "../../Images/Avatar.jpeg";
 import styles from "./Main.module.css";
 
-const { Header, Content, Sider } = Layout;
+const { Header, Content } = Layout;
 
 const Main = (props) => {
-  let [sideCollapsed, setSideCollapsed] = useState(false);
-
   return (
     <Layout>
       <Header>
@@ -35,7 +32,11 @@ const Main = (props) => {
             </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <a href="http://www.clintonmedbery.com/" target="_blank">
+            <a
+              href="http://www.clintonmedbery.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Icon>
                 <FontAwesomeIcon icon={faHdd} fixedWidth />
               </Icon>
