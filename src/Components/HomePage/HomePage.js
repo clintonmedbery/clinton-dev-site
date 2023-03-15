@@ -7,7 +7,7 @@ import gigabodes from "../../Images/gigabodes.png";
 import clintonDev from "../../Images/clintonDev.png";
 
 const HomePage = () => {
-  const cardWrapperStyle = "mx-auto";
+  const cardWrapperStyle = "w-full";
   const descriptionStyle = "mt-4 text-purplegray";
   const cardStyle = { marginBottom: "1em", height: "100%" };
   return (
