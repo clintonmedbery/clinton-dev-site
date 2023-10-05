@@ -100,7 +100,7 @@ export const Sidebar = ({
             {!collapsed && (
               <div className="flex flex-col ">
                 <span className="text-indigo-50 my-0">Clinton Medbery</span>
-                <Link href="/" className="text-indigo-200 text-sm">
+                <Link href="/profile" className="text-indigo-200 text-sm">
                   View Profile
                 </Link>
               </div>
