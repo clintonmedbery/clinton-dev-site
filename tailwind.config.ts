@@ -7,12 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    colors: {
-      "ox-blue": "#0F0F2F",
-      "space-cadet": "#2D2E50",
-      "non-photo-blue": "#89D2DC"
-    },
     extend: {
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"]
+      },
+      colors: {
+        "ox-blue": "#0F0F2F",
+        "space-cadet": "#2D2E50",
+        "non-photo-blue": "#89D2DC"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

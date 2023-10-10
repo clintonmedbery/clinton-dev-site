@@ -25,7 +25,7 @@ export const Sidebar = ({
   return (
     <div
       className={classNames({
-        "bg-ox-blue text-zinc-50 fixed md:static md:translate-x-0 z-20 whitespace-nowrap":
+        "bg-ox-blue text-zinc-50 fixed md:static md:translate-x-0 z-20 whitespace-nowrap font-raleway":
           true,
         "transition-all duration-300 ease-in-out": true,
         "w-[300px]": !collapsed,

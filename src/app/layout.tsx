@@ -18,13 +18,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const getIsMobile = () : boolean | undefined => {
+  const getIsMobile = (): boolean | undefined => {
     const userAgent = headers().get("user-agent") ?? undefined;
     if (userAgent === undefined) return undefined;
     const { isMobile } = getSelectorsByUserAgent(userAgent);
     return isMobile;
   };
-  const isMobile= getIsMobile();
+  const isMobile = getIsMobile();
   return (
     <html lang="en">
       <body className={inter.className}>

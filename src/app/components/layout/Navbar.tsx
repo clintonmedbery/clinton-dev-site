@@ -14,7 +14,8 @@ export const Navbar = (props: NavbarProps) => {
   return (
     <nav
       className={classNames({
-        "bg-ox-blue text-zinc-500 border-double border-b": true,
+        "bg-ox-blue text-non-photo-blue border-double border-b font-raleway":
+          true,
         "flex items-center": true,
         "w-screen md:w-full sticky z-10 px-4 shadow-sm h-[73px] top-0 ": true
       })}
