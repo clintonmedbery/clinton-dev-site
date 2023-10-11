@@ -1,12 +1,12 @@
 import { IconBrandGithub } from "@tabler/icons-react";
 import { PageWrapper } from "../components/PageWrapper";
 import { IconLink } from "../components/IconLink";
-import { GradientCard } from "../components/GradientCard";
+import { GradientBorder } from "../components/GradientBorder";
 
 export default function VaxScraper() {
   return (
     <PageWrapper>
-      <GradientCard>
+      <GradientBorder padding="pb-1 pr-1">
         <div className="text-4xl">Vax Scraper SC</div>
         <div className="pt-5 pb-5">
           In the beginning days of the Covid vaccine, I knew many elderly and
@@ -26,7 +26,7 @@ export default function VaxScraper() {
             </IconLink>
           </div>
         </div>
-      </GradientCard>
+      </GradientBorder>
     </PageWrapper>
   );
 }

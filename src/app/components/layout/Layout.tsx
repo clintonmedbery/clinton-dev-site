@@ -25,6 +25,8 @@ export const Layout = ({ children, isMobile }: LayoutProps) => {
         collapsed={collapsed}
         setCollapsed={setSidebarCollapsed}
         shown={showSidebar}
+        isMobile={isMobile}
+        setShowSidebar={setShowSidebar}
       />
       <div>
         <Navbar onMenuButtonClick={() => setShowSidebar(prev => !prev)} />

@@ -2,12 +2,12 @@ import { IconBrandGithub, IconUmbrella } from "@tabler/icons-react";
 import { IconLink } from "../components/IconLink";
 import Image from "next/image";
 import { PageWrapper } from "../components/PageWrapper";
-import { GradientCard } from "../components/GradientCard";
+import { GradientBorder } from "../components/GradientBorder";
 
 export default function OldWeather() {
   return (
     <PageWrapper>
-      <GradientCard>
+      <GradientBorder padding="pb-1 pr-1">
         <div className="text-4xl">Old School Weather</div>
         <div className="pt-5 pb-5">
           Simple weather app inspired by the old school weather channel and
@@ -40,7 +40,7 @@ export default function OldWeather() {
           height={1080}
           alt="Screenshot of old school weather app."
         />
-      </GradientCard>
+      </GradientBorder>
     </PageWrapper>
   );
 }

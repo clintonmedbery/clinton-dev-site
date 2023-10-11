@@ -7,21 +7,27 @@ import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon
 } from "@heroicons/react/24/outline";
+import { usePathname } from "next/navigation";
 
 type SidebarProps = {
   collapsed: boolean;
   navItems?: NavItem[];
   setCollapsed(collapsed: boolean): void;
+  setShowSidebar(showSidebar: boolean): void;
   shown: boolean;
+  isMobile: boolean | undefined;
 };
+
 export const Sidebar = ({
   collapsed,
   navItems = defaultNavItems,
   shown,
-  setCollapsed
+  setCollapsed,
+  setShowSidebar,
+  isMobile
 }: SidebarProps) => {
+  const path = usePathname();
   const Icon = collapsed ? ChevronDoubleRightIcon : ChevronDoubleLeftIcon;
-
   return (
     <div
       className={classNames({
@@ -72,11 +78,18 @@ export const Sidebar = ({
                   className={classNames({
                     "text-indigo-100 hover:bg-indigo-900 flex": true, //colors
                     "transition-colors duration-300": true, //animation
-                    "rounded-md p-2 mx-3 gap-4 ": !collapsed,
-                    "rounded-full p-2 mx-3 w-10 h-10": collapsed
+                    "p-2 mx-3 gap-4 ": !collapsed,
+                    "p-2 mx-3 w-10 h-10": collapsed,
+                    "border-l-4 border-non-photo-blue": item.href === path
                   })}
                 >
-                  <Link href={item.href} className="flex gap-2">
+                  <Link
+                    href={item.href}
+                    className="flex gap-2"
+                    onClick={() => {
+                      if (isMobile) setShowSidebar(false);
+                    }}
+                  >
                     {item.icon} <span>{!collapsed && item.sidebarLabel}</span>
                   </Link>
                 </li>

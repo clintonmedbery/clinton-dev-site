@@ -2,12 +2,12 @@ import { IconBrandGithub, IconUmbrella } from "@tabler/icons-react";
 import { IconLink } from "../components/IconLink";
 import Image from "next/image";
 import { PageWrapper } from "../components/PageWrapper";
-import { GradientCard } from "../components/GradientCard";
+import { GradientBorder } from "../components/GradientBorder";
 
 export default function FreeAAC() {
   return (
     <PageWrapper>
-      <GradientCard>
+      <GradientBorder padding="pb-1 pr-1">
         <div className="text-4xl">Free AAC</div>
         <div className="pt-5 pb-5">
           I first learned about Augmentative and Alternative Communication (AAC)
@@ -42,7 +42,7 @@ export default function FreeAAC() {
           height={1080}
           alt="Screenshot of Free AAC app."
         />
-      </GradientCard>
+      </GradientBorder>
     </PageWrapper>
   );
 }

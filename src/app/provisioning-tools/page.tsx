@@ -1,12 +1,12 @@
 import { IconBrandGithub, IconCloudPlus } from "@tabler/icons-react";
 import { IconLink } from "../components/IconLink";
 import { PageWrapper } from "../components/PageWrapper";
-import { GradientCard } from "../components/GradientCard";
+import { GradientBorder } from "../components/GradientBorder";
 
 export default function ProvisioningTools() {
   return (
     <PageWrapper>
-      <GradientCard>
+      <GradientBorder padding="pb-1 pr-1">
         <div className="text-4xl">Multi Cloud Provisioning Tools</div>
         <div className="pt-5 pb-5">
           This library aims to help users get form options for provisioning
@@ -35,7 +35,7 @@ export default function ProvisioningTools() {
             </IconLink>
           </div>
         </div>
-      </GradientCard>
+      </GradientBorder>
     </PageWrapper>
   );
 }

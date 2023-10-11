@@ -1,4 +1,4 @@
-import { GradientCard } from "../components/GradientCard";
+import { GradientBorder } from "../components/GradientBorder";
 import { PageWrapper } from "../components/PageWrapper";
 
 export default function ProvisioningTools() {
@@ -7,7 +7,7 @@ export default function ProvisioningTools() {
       <div className="text-4xl pb-4">Resume</div>
 
       <div className="pb-4">
-        <GradientCard>
+        <GradientBorder>
           <div className="text-2xl pt-2">D2iQ</div>
           <div className="text-l">Senior Software Engineer</div>
           <div className="text-l">June 2021 - October 2023</div>
@@ -50,10 +50,10 @@ export default function ProvisioningTools() {
               to provide Kubernetes resource schema to our UI Application.{" "}
             </li>
           </ul>
-        </GradientCard>
+        </GradientBorder>
       </div>
       <div className="pb-4">
-        <GradientCard>
+        <GradientBorder>
           <div className="text-2xl pt-4">Engage Talent</div>
           <div className="text-l">Senior Software Engineer</div>
           <div className="text-l">December 2019 – June 2021</div>
@@ -81,10 +81,10 @@ export default function ProvisioningTools() {
               migrations with Flyway.
             </li>
           </ul>
-        </GradientCard>
+        </GradientBorder>
       </div>
       <div className="pb-4">
-        <GradientCard>
+        <GradientBorder>
           <div className="text-2xl pt-4">Ceterus</div>
           <div className="text-l">Senior Software Engineer</div>
           <div className="text-l">May 2018 – December 2019</div>
@@ -112,10 +112,10 @@ export default function ProvisioningTools() {
               their roles.
             </li>
           </ul>
-        </GradientCard>
+        </GradientBorder>
       </div>
       <div className="pb-4">
-        <GradientCard>
+        <GradientBorder>
           <div className="text-2xl pt-4">Booz Allen Hamilton</div>
           <div className="text-l">March 2016 – May 2018</div>
           <div className="text-l pt-4">SecureGive Project</div>
@@ -167,7 +167,7 @@ export default function ProvisioningTools() {
               80% coverage after starting from 30%.
             </li>
           </ul>
-        </GradientCard>
+        </GradientBorder>
       </div>
     </PageWrapper>
   );

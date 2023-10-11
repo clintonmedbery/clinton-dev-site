@@ -1,10 +1,10 @@
-import { GradientCard } from "./components/GradientCard";
+import { GradientBorder } from "./components/GradientBorder";
 import { PageWrapper } from "./components/PageWrapper";
 
 export default function Home() {
   return (
     <PageWrapper>
-      <GradientCard>
+      <GradientBorder padding="pb-1 pr-1">
         <div className="text-7xl">Hello there.</div>
         <div className="pt-5">
           My name is Clinton Medbery. I am a seasoned full stack developer with
@@ -12,7 +12,7 @@ export default function Home() {
           WebGL and any other cutting-edge tech. Take a look around to discover
           what I have been up to lately.
         </div>
-      </GradientCard>
+      </GradientBorder>
     </PageWrapper>
   );
 }
