@@ -85,7 +85,7 @@ export const Sidebar = ({
                 >
                   <Link
                     href={item.href}
-                    className="flex gap-2"
+                    className="flex gap-2 w-full"
                     onClick={() => {
                       if (isMobile) setShowSidebar(false);
                     }}
