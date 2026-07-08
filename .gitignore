@@ -10,6 +10,11 @@
 
 # production
 /build
+/dist
+
+# pnpm 11 auto-generates this locally to record build-script approvals; it
+# breaks Vercel's pnpm 9 (requires a `packages` field), so keep it untracked.
+pnpm-workspace.yaml
 
 # misc
 .DS_Store

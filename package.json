@@ -2,60 +2,45 @@
   "name": "clinton-dev-site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@ant-design/icons": "^4.2.1",
-    "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "antd": "^4.4.0",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "react-desktop": "^0.3.9",
     "react-draggable": "4.0.3",
     "react-pdf": "^5.3.0",
     "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --allow-empty"
-    }
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "prepare": "husky"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "./node_modules/.bin/prettier --write",
-      "./node_modules/.bin/eslint --fix"
-    ],
-    "tests/**/*.{js,jsx}": [
-      "./node_modules/.bin/prettier --write",
-      "./node_modules/.bin/eslint --fix"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "prettier --write"
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "css-loader": "3.2.0",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^10.5.3",
+    "postcss": "^8.4.49",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
   }
 }

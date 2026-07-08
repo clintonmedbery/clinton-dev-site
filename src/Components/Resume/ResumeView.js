@@ -41,7 +41,7 @@ export const ResumeView = ({ isHidden, closeHandler }) => {
           />
           <div className={styles.wrapper}>
             <Document
-              file="./ClintonMedberyResume.pdf"
+              file="/ClintonMedberyResume.pdf"
               onLoadError={console.error}
               renderMode="svg"
             >
